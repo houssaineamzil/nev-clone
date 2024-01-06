@@ -70,9 +70,6 @@ export const Grid = ({
 				margin={[16, 16]}>
 				<div
 					key="bio"
-					className="react-grid-placeholder react-grid-item react-grid-resizable-hide react-grid-resizable"></div>
-				<div
-					key="bio"
 					className={cn(styles.itemGrab, styles.item)}
 					style={{
 						transitionDuration: isMounted ? "500ms" : "0ms",
