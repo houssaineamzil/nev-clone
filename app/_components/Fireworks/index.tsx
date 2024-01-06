@@ -1,14 +1,12 @@
 import confetti from "canvas-confetti";
 import { useEffect, useRef } from "react";
 
-interface ConfittiOptions {}
-
 export const Fireworks = ({
   active,
-  config,
+  options,
 }: {
   active: boolean;
-  config: ConfittiOptions;
+  options: confetti.Options;
 }) => {
   const canvasRef = useRef<any>(null);
 
@@ -19,7 +17,7 @@ export const Fireworks = ({
       disableForReducedMotion: true,
     });
 
-    confettiCanon(config);
+    confettiCanon(options);
 
     return () => {
       confettiCanon.reset();
@@ -31,14 +29,7 @@ export const Fireworks = ({
       {active && (
         <canvas
           ref={canvasRef}
-          style={{
-            position: "fixed",
-            inset: 0,
-            width: "full",
-            height: "full",
-            zIndex: 9999,
-            pointerEvents: "none",
-          }}
+          
         />
       )}
     </div>
