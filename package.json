@@ -22,6 +22,7 @@
     "sass": "^1.69.5"
   },
   "devDependencies": {
+    "@types/canvas-confetti": "^1.6.4",
     "@types/mapbox-gl": "^2.7.19",
     "@types/node": "^20",
     "@types/react": "^18",
