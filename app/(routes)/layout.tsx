@@ -1,9 +1,9 @@
 import { inter, moranga } from "_assets/fonts";
 import { ThemeProvider } from "_components/ThemeProvider";
-import "_styles/globals.scss";
-import "_styles/gridlayout.css";
-import cn from "classnames";
 import "mapbox-gl/dist/mapbox-gl.css";
+import "_styles/gridlayout.css";
+import "_styles/globals.scss";
+import cn from "classnames";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
