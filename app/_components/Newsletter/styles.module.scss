@@ -1,0 +1,148 @@
+.container {
+  height: 100%;
+  width: 100%;
+  padding: 40px 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 32px;
+  background: var(--widgetBackground);
+  box-shadow: var(--widgetBorder);
+}
+
+.copy {
+}
+
+.title {
+  font-size: 24px;
+  font-family: var(--moranga);
+  line-height: 32px;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.body {
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  color: var(--text);
+}
+
+.emailInput {
+  border: none;
+  width: 100%;
+  background: transparent;
+  border-bottom: var(--inputBorder);
+  padding: 12px 0;
+  font-size: 16px;
+  letter-spacing: 0.25px;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 8px;
+  border-radius: 0;
+
+  &:focus {
+    outline: none;
+  }
+  &::placeholder {
+    color: var(--inputPlaceholder);
+  }
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subscribeButton {
+  height: 36px;
+  padding: 0 12px;
+  top: 20px;
+  right: 20px;
+  border-radius: 18px;
+  background: var(--buttonBackground);
+  box-shadow: var(--buttonBoxShadow);
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  transition: 0.3s ease-out;
+  will-change: box-shadow, transform;
+
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  font-weight: 500;
+  color: var(--text);
+
+  &:hover {
+    cursor: pointer;
+    transition: 0.2s ease-out;
+    box-shadow: var(--buttonBoxShadowHover);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.pica {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  font-weight: 500;
+  color: var(--text);
+  margin-left: 6px;
+}
+
+.counter {
+  @media (max-width: 1200px) {
+    display: none;
+  }
+}
+
+.mobileCounter {
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.count {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  font-weight: 400;
+  color: var(--text);
+  margin-left: 6px;
+}
+
+.success {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: var(--widgetBackground);
+  box-shadow: var(--widgetBorder);
+  top: 0;
+  left: 0;
+  display: flex;
+  border-radius: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+.confettiContainer {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  z-index: 0;
+}
+
+.memoji {
+  width: 100px;
+  z-index: 1;
+}

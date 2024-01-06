@@ -1,0 +1,105 @@
+.container {
+  height: 100%;
+  width: 100%;
+  background: var(--widgetBackground);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 36px 42px;
+  border-radius: 32px;
+  overflow: hidden;
+  background: var(--widgetBackground);
+  box-shadow: var(--widgetBorder);
+
+  @media (max-width: 1200px) {
+    padding: 40px 46px;
+  }
+
+  @media (max-width: 360px) {
+    padding: 24px 32px;
+  }
+
+  @media (max-width: 360px) {
+    p {
+      font-size: 13px;
+      line-height: 24px;
+    }
+  }
+}
+
+.memojiContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.memoji {
+  height: 105px;
+  z-index: 1;
+
+  @media (max-width: 1200px) {
+    height: 132px;
+  }
+
+  @media (max-width: 800px) {
+    height: 96px;
+  }
+
+  @media (max-width: 360px) {
+    height: 72px;
+  }
+}
+
+.pulse {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  // background-color: var(--widgetBackground);
+  position: absolute;
+}
+
+.about {
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.lockdownButton {
+  background: var(--buttonBackground);
+  box-shadow: var(--buttonBoxShadow);
+  position: absolute;
+  height: 36px;
+  padding: 0 12px;
+  top: 20px;
+  right: 20px;
+  border: none;
+  border-radius: 18px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  transition: 0.2s ease-out;
+  will-change: box-shadow, transform;
+
+  &:hover {
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-out;
+    box-shadow: var(--buttonBoxShadowHover);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    color: inherit;
+  }
+}

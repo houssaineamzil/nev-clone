@@ -1,0 +1,68 @@
+.container {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 32px;
+  background: var(--twitterBackground);
+  box-shadow: var(--widgetBorder);
+}
+
+.backgroundSVG {
+  height: 101%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.image {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.Link_Container {
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  transition: box-shadow 0.2s ease-out;
+  background: var(--cornerButtonBackground);
+  box-shadow: var(--cornerButtonBoxShadow);
+  border: none;
+  &:hover {
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-out;
+    box-shadow: var(--cornerButtonBoxShadowHover);
+  }
+}
+
+.Link__ArrowContainer {
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+}
+
+.Link__Title {
+  margin: 0 36px 0 16px;
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  font-weight: 400;
+  white-space: nowrap;
+  color: var(--text);
+}

@@ -1,0 +1,40 @@
+.container {
+  height: 100%;
+  width: 100%;
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--twitterBackground);
+  box-shadow: var(--widgetBorder);
+}
+
+.icon {
+  color: var(--twitterLogo, #ffffff);
+
+  @media (max-width: 1200px) {
+    transform: scale(0.7);
+  }
+}
+
+.link {
+  background: var(--cornerButtonBackground);
+  box-shadow: var(--cornerButtonBoxShadow);
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.2s ease-out;
+  will-change: transform;
+
+  &:hover {
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-out;
+    box-shadow: var(--cornerButtonBoxShadowHover);
+  }
+}

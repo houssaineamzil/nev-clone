@@ -1,0 +1,40 @@
+.container {
+  position: relative;
+  background: transparent;
+  border-radius: 23px;
+  transform: translateX(0px);
+  display: flex;
+  font-size: 14px;
+  padding: 5px;
+  background: var(--filterBackground);
+  border: var(--filterBorder);
+}
+
+.highlight {
+  position: absolute;
+  height: 32px;
+  width: 49px;
+  border-radius: 16px;
+  z-index: -1;
+  background: var(--highlightBackground);
+  border: var(--filterBorder);
+}
+
+.option {
+  border-radius: 50px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 32px;
+  padding: 0px 16px;
+  transition: opacity 0.3s ease 0s;
+  color: var(--filterText);
+
+  @media (hover: hover) {
+    &:hover {
+      cursor: pointer;
+      opacity: 0.5;
+      transition: opacity 0.25s ease 0s;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.container {
+  max-width: 1200px;
+  position: relative;
+  margin: -16px auto 0 auto;
+  padding-bottom: 80px;
+
+  @media (max-width: 1200px) {
+    max-width: 800px;
+  }
+
+  @media (max-width: 799px) {
+    max-width: 375px;
+  }
+
+  @media (max-width: 374px) {
+    max-width: 320px;
+  }
+}
+
+.itemGrab {
+  overflow: hidden;
+  border-radius: 32px;
+  user-select: none;
+
+  &:hover {
+    cursor: grab;
+  }
+
+  &:active {
+    cursor: grabbing;
+  }
+}
+
+.Item {
+  transition: 0.25s ease;
+
+  &:hover {
+    box-shadow: rgba(100, 100, 111, 0.1) 0px 5px 24px 0px;
+  }
+}

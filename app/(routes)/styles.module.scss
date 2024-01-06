@@ -1,0 +1,14 @@
+.container {
+  width: 100%;
+  max-width: 80rem;
+  padding: 0 2rem 6rem;
+  margin-inline: auto;
+  @media screen and (max-width: 991px) {
+    padding-inline: 1em;
+  }
+}
+
+.GridContainer {
+  opacity: 0;
+  will-change: transform, opacity;
+}
