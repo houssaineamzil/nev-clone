@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "axios": "^1.6.5",
-    "canvas-confetti": "^1.9.2",
     "classnames": "^2.3.2",
     "framer-motion": "^10.17.9",
     "mapbox-gl": "^3.0.1",
@@ -18,11 +17,11 @@
     "next-themes": "^0.2.1",
     "react": "^18",
     "react-dom": "^18",
+    "react-dom-confetti": "^0.2.0",
     "react-grid-layout-next": "^2.2.0",
     "sass": "^1.69.5"
   },
   "devDependencies": {
-    "@types/canvas-confetti": "^1.6.4",
     "@types/mapbox-gl": "^2.7.19",
     "@types/node": "^20",
     "@types/react": "^18",
